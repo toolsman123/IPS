@@ -1,6 +1,14 @@
+# Version 1.1.0 更新
+- 新增ipf 子命令
+-- ipf IPfile，使用时会生成一个IPfile.txt文本文件用于接收IP数据，相较于IPS ip -s 命令兼容性更好，可兼容换行符，适合大批量查询IP，结果同样会输入在控制台和日志文件
+- IPS ip -s 已支持多IP输入，（逗号、分号、空格） 多种分隔符匹配，示例：
+-- IPS ip -s "6.119.44.11 125.60.124.102;45.15.140.104, 119.29.29.29"
+![Multi IP input](https://github.com/toolsman123/IPS/blob/main/photo/Multi%20IP%20input.png)
+
+***
 注：
 
-- 该工具查询IP接口由ip138.com 提供，使用前请仔细阅读官方接口文档说明
+- 该工具查询IP接口由ip138.com 提供，使用前请仔细阅读[官方接口文档说明](https://user.ip138.com/ip/doc/)
 - 工具采用python click库编写
 
 
@@ -8,7 +16,7 @@
 
 # 使用前准备
 
-1. 注册ip138.com 账号，获取接口token
+1. 注册ip138.com 账号，获取接口token(1000次内免费使用)
 
 2. 下载IPS 工具 ，保存至 /Windows/System32 路径下 （Linux 可保存在 /usr/bin 路径下）
 ·保存路径不正确会导致无法直接在命令行运行（需自行配置环境变量解决）
@@ -16,7 +24,7 @@
 
 # 如何使用
 
-![命令总览](https://github.com/toolsman123/IPS/blob/cf1cfab9f445b20ce8a08e2d8547c7c445011bf9/photo/1.png)
+![命令总览](https://github.com/toolsman123/IPS/blob/main/photo/version%201.1.0.png)
 
 ## 首次使用
 
@@ -57,5 +65,5 @@ IPS log
 
 ​
 
-注：目前可以满足简单的查询需求，后续计划实现批量查询模式，欢迎交流讨论
+注：后续将会接入ip-api.com的接口
 - mail:1724063267@qq.com
