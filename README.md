@@ -1,10 +1,17 @@
+# Version 1.2.0 更新 2022年10月28日
+## 新增domain查询
+- IPS domain (domain) 可输出当前域名解析IP的信息详情
+![](https://github.com/toolsman123/IPS/blob/main/photo/domain.png)
+
+
 # Version 1.1.1 更新 2022年4月23日
-修复
+### 修复
 - 优化ipf命令使用
 -- 默认非记事本打开.txt文件存在逻辑错误，会导致多次查询（已修复）
-优化
+### 优化
 - ipf命令重构
 -- Version 1.1.0版本中IPfile.txt文件会在命令初始化中永久创建，目前已经变更为临时创建，批量查询完成后将移除IPfile.txt文件
+
 
 
 # Version 1.1.0 更新
@@ -33,7 +40,7 @@
 
 # 如何使用
 
-![命令总览](https://github.com/toolsman123/IPS/blob/main/photo/version%201.1.0.png)
+![命令总览](https://github.com/toolsman123/IPS/blob/main/photo/version%201.2.0.png)
 
 ## 首次使用
 
